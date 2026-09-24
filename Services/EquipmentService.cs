@@ -49,9 +49,10 @@ namespace fdcapp.Services
         public List<EquipLog> GetLogsByEquipId(string equipId)
         {
 
-            List<EquipLog> logList = [.. _dbContext.EquipLogs
+            List<EquipLog> logList = _dbContext.EquipLogs
                 .Where(log => log.EquipId == equipId)
-                .OrderByDescending(log => log.OccurDt)];
+                .OrderByDescending(log => log.OccurDt)
+                .ToList();
                 
             return logList;
 

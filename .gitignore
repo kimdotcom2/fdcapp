@@ -1,0 +1,43 @@
+## .NET 빌드 결과물
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+.vscode/
+*.VisualState.xml
+TestResult.xml
+[Tt]est[Rr]esult*/
+
+## Rider
+.idea/
+*.sln.iml
+
+## 로그 및 임시 파일
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+## 사용자별 설정
+*.user
+*.suo
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nupkg.metadata
+*.nupkg.sha512
+
+## EF Core 마이그레이션 산출물 (필요 시 주석 해제)
+# Migrations/
